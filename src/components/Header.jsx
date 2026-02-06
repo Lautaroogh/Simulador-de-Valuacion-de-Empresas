@@ -23,19 +23,22 @@ export default function Header({
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-16 md:h-20">
                     {/* Logo */}
-                    <div className="flex items-center gap-3 cursor-pointer" onClick={() => onNavigate('wizard')}>
-                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl gradient-primary flex items-center justify-center shadow-lg">
-                            <span className="text-white text-xl md:text-2xl font-bold">V</span>
+                    <div
+                        className="flex items-center gap-2 cursor-pointer"
+                        onClick={() => onNewValuation()}
+                    >
+                        <div className="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-primary-500/30">
+                            <img src="/logo.svg" alt="ValuaPyME Logo" className="w-6 h-6" />
                         </div>
-                        <div className="hidden sm:block">
-                            <h1 className="font-display text-xl md:text-2xl font-bold text-slate-800">
+                        <div>
+                            <h1 className="text-xl font-bold text-slate-800 tracking-tight leading-none">
                                 Valua<span className="text-primary-600">PyME</span>
                             </h1>
-                            <p className="text-xs text-slate-500 -mt-1">Valuación de Empresas</p>
+                            <p className="text-[10px] text-slate-400 font-medium tracking-wider uppercase">
+                                Simulador de Valuación
+                            </p>
                         </div>
-                    </div>
-
-                    {/* Desktop Navigation */}
+                    </div>          {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center gap-2">
                         {navItems.map(item => (
                             <button
