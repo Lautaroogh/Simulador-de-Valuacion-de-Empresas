@@ -12,7 +12,8 @@ export default function ValuationHistory({
     onLoad,
     onRefresh,
     compareIds,
-    onCompareToggle
+    onCompareToggle,
+    onNewValuation
 }) {
     const [deleteConfirm, setDeleteConfirm] = useState(null);
     const [viewMode, setViewMode] = useState('list'); // 'list' or 'compare'
@@ -47,7 +48,7 @@ export default function ValuationHistory({
                     <p className="text-slate-500 mb-6">
                         Completa tu primera valuación y guárdala para verla aquí
                     </p>
-                    <button className="btn-primary">
+                    <button onClick={onNewValuation} className="btn-primary">
                         📊 Crear Primera Valuación
                     </button>
                 </div>

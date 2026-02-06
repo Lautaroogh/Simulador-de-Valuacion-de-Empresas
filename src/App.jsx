@@ -371,6 +371,7 @@ Usa tono profesional pero accesible. Responde en español.`;
                         valuations={savedValuations}
                         onLoad={handleLoadValuation}
                         onRefresh={loadValuations}
+                        onNewValuation={handleNewValuation}
                         compareIds={compareIds}
                         onCompareToggle={(id) => {
                             setCompareIds(prev =>
