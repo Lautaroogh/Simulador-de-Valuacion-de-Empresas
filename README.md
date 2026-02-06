@@ -75,9 +75,6 @@ npm install
 npm run dev
 ```
 
-### Acceso
-Abrir en el navegador: **http://localhost:5173**
-
 ### Comandos Disponibles
 
 | Comando | Descripción |
